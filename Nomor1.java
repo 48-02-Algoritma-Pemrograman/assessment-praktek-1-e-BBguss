@@ -6,18 +6,19 @@ public class Nomor1{
     int jumlahAggota; 
     int tunjanganPerjiwa = 100000;
     int sisaAnggota=0;
-    double tunjanganSisaAnggota =0; 
+    int tunjanganSisaAnggota =0; 
     
     System.out.println("Banyaknya Jumlah Anggota Keluarga");
     jumlahAggota = input.nextInt();
     
+    
     if (jumlahAggota <=3) {
         tunjanganTotal= jumlahAggota* tunjanganPerjiwa;
     }
-    else if (jumlahAggota > 3) {
-        sisaAnggota= jumlahAggota - 1 ;
+    else if (jumlahAggota >= 3) {
+        sisaAnggota  = jumlahAggota -3;
         tunjanganSisaAnggota = (sisaAnggota *50000);
-        tunjanganTotal = (jumlahAggota*tunjanganPerjiwa)-tunjanganPerjiwa;
+        tunjanganTotal = tunjanganPerjiwa*jumlahAggota - tunjanganSisaAnggota;
     }
     System.out.println("Jumlah Anggota Keluarga: ");
     System.out.println("Besar tunjangan Kesehatan: "+ tunjanganTotal);
