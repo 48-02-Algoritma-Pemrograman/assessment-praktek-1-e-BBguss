@@ -20,7 +20,7 @@ public class Nomor1{
         tunjanganSisaAnggota = (sisaAnggota *50000);
         tunjanganTotal = tunjanganPerjiwa*jumlahAggota - tunjanganSisaAnggota;
     }
-    System.out.println(jumlahAnggota);
+    System.out.println(jumlahAggota);
     System.out.println(tunjanganTotal);
     }
 }
