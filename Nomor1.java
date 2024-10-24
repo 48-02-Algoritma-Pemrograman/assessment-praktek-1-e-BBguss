@@ -1,7 +1,8 @@
 import java.util.Scanner;
 public class Nomor1{
     public static void main(String[] args){
-   double tunjanganTotal =0; 
+    Scanner input = new Scanner (System.in);
+    double tunjanganTotal =0; 
     int jumlahAggota; 
     double tunjanganPerjiwa = 100000;
     int sisaAnggota=0;
