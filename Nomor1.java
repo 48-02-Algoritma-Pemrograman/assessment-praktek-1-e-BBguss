@@ -1,24 +1,24 @@
-Import java.util.Scanner;
+import java.util.Scanner;
 public class Nomor1{
     public static void main(String[] args){
-    double tunjangan =0; 
+   double tunjanganTotal =0; 
     int jumlahAggota; 
     double tunjanganPerjiwa = 100000;
     int sisaAnggota=0;
-    Scanner input= new Scanner(System.in);
-
-    jumlahAggota=0;
-    System.out.println("Jumlah Anggota Keluarga: "+ jumlahAggota);
-    jumlahAggota= input.nextInt();
-
-    if (jumlahAggota <= 3) {
-        tunjangan = jumlahAggota * tunjanganPerjiwa;
+    double tunjanganSisaAnggota =0; 
+    
+    System.out.println("Banyaknya Jumlah Anggota Keluarga");
+    jumlahAggota = input.nextInt();
+    
+    if (jumlahAggota <=3) {
+        tunjanganTotal= jumlahAggota* tunjanganPerjiwa;
     }
     else if (jumlahAggota > 3) {
-        sisaAnggota =jumlahAggota -= 3 ;
-        tunjangan= (sisaAnggota*50000)+(tunjanganPerjiwa*3);
+        sisaAnggota= jumlahAggota - 1 ;
+        tunjanganSisaAnggota = (sisaAnggota *50000);
+        tunjanganTotal = (jumlahAggota*tunjanganPerjiwa)-tunjanganPerjiwa;
     }
     System.out.println("Jumlah Anggota Keluarga: ");
-    System.out.println("Besar tunjangan Kesehatan: "+ tunjangan);
+    System.out.println("Besar tunjangan Kesehatan: "+ tunjanganTotal);
     }
 }
