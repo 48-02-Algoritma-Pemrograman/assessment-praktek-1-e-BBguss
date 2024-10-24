@@ -8,7 +8,6 @@ public class Nomor1{
     int sisaAnggota=0;
     int tunjanganSisaAnggota =0; 
     
-    System.out.println("Banyaknya Jumlah Anggota Keluarga");
     jumlahAggota = input.nextInt();
     
     
