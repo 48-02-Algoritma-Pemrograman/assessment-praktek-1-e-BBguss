@@ -2,9 +2,9 @@ import java.util.Scanner;
 public class Nomor1{
     public static void main(String[] args){
     Scanner input = new Scanner (System.in);
-    double tunjanganTotal =0; 
+    int tunjanganTotal =0; 
     int jumlahAggota; 
-    double tunjanganPerjiwa = 100000;
+    int tunjanganPerjiwa = 100000;
     int sisaAnggota=0;
     double tunjanganSisaAnggota =0; 
     
